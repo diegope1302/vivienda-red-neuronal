@@ -30,22 +30,3 @@ Asegúrate de tener instaladas las siguientes bibliotecas:
 
 ```bash
 pip install numpy pandas matplotlib scikit-learn tensorflow
-
-## 📊 Resultados
-
-El modelo de regresión lineal muestra la relación entre AveRooms y el valor medio de vivienda.
-
-La red neuronal mejora la precisión al considerar múltiples variables.
-
-Se generan gráficos que comparan los valores reales con los predichos por ambos modelos.
-
-##📁 Dataset
-Se utiliza el dataset California Housing disponible en scikit-learn.
-
-##🔧 Autor
-diego
-Proyecto de Investigación y Desarrollo – Redes Neuronales
-Materia: Inteligencia Artificial / Aprendizaje Automático
-Profesor/a: (instructor luis silva)
-
-https://github.com/diegope1302/vivienda-red-neuronal
