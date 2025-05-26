@@ -47,3 +47,5 @@ diego
 Proyecto de Investigación y Desarrollo – Redes Neuronales
 Materia: Inteligencia Artificial / Aprendizaje Automático
 Profesor/a: (instructor luis silva)
+
+https://github.com/diegope1302/vivienda-red-neuronal
