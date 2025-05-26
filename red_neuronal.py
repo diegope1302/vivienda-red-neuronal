@@ -35,24 +35,27 @@ model.fit(X_train, y_train, validation_split=0.2, epochs=50, verbose=0)
 # Predecir
 y_pred = model.predict(X_test).flatten()
 
-# -------- Gráfico 1: Valores reales --------
-plt.figure(figsize=(8, 4))
-plt.plot(y_test.values[:100], label="Valor real", color="blue", marker='o')
-plt.title("Gráfico 1: Valores reales de precios de viviendas")
-plt.xlabel("Índice")
-plt.ylabel("Precio (en decenas de miles)")
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.show()
+# Crear figura con 2 subgráficos
+plt.figure(figsize=(12, 5))
 
-# -------- Gráfico 2: Valores predichos --------
-plt.figure(figsize=(8, 4))
-plt.plot(y_pred[:100], label="Valor predicho", color="green", marker='x')
-plt.title("Gráfico 2: Valores predichos por la red neuronal")
+# Gráfico 1: Valores reales
+plt.subplot(1, 2, 1)
+plt.plot(y_test.values[:100], label="Valor real", color="blue", marker='o')
+plt.title("Valores reales")
 plt.xlabel("Índice")
-plt.ylabel("Precio (en decenas de miles)")
+plt.ylabel("Precio")
 plt.grid(True)
 plt.legend()
+
+# Gráfico 2: Valores predichos
+plt.subplot(1, 2, 2)
+plt.plot(y_pred[:100], label="Valor predicho", color="green", marker='x')
+plt.title("Valores predichos")
+plt.xlabel("Índice")
+plt.ylabel("Precio")
+plt.grid(True)
+plt.legend()
+
+# Mostrar ambos gráficos
 plt.tight_layout()
 plt.show()
